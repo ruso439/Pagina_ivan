@@ -1,0 +1,10 @@
+refencia de interfaz: https://inmediative.com/#home
+
+La página contará con un total de 7 secciones, todas las secciones contarán con un icono de “sonido”, en la esquina inferior derecha, el cual al presionarse narrará todo el texto presente en esa sección. Como cualquier botón al momento de colocar el cursor en el mismo dirá “narrar texto”, la persona hará click, se escuchará un sonido y dará paso a la narración.
+INICIO: es la portada o caratula de la página la cual contará con una frase con juego tipográfico que forma parte del slogan de la marca. Esta sección será tipo “slide” donde se podrá ver el video manifiesto de la misma.
+QUIENES SOMOS: en esta sección se contará brevemente de que trata la agencia y el ADN de la misma. El texto podrá ser escuchado vía el botón de “sonido”.
+QUE HACEMOS: en esta sección se relatan las 5 categorías de servicios que ofrece esta agencia. Cada uno con una pequeña sub sección y explicación de trata.
+LABUROS: en esta sección se mostrarán los diversos trabajos realizados por la agencia. En este caso al presionar en cada trabajo se abrirá una ventana emergente con el trabajo en una mejor resolución o en caso que sea video se reproducirá ese video. También esta ventana emergente contará con una breve explicación del trabajo y una cruz para volver a la sección completa de portfolio.
+TU VIDA: En esta sección invitamos a todo quien nos visita a dejarnos su experiencia no solo de como navegó la página sino de que nos cuente como vive el día a día, que dificultades afronta especialmente en la web y que consejos podría ofrecernos para hacer de nuestra página un lugar más inclusivo. Se ofrecen diversas alternativas de comunicación ya sea mandar un mensaje a whassap, un correo de voz o un mail.
+PÁGINA AMIGABLES: Ofrecemos links a páginas internacionales de diversos temas las cuales presentan una navegación inclusiva, intuitiva y amigable para que todos puedan disfrutar de la misma.
+CONTACTO: En esta sección, también de comunicación, nos enfocamos en las consultas pertinentes a la agencia y los servicios que esta ofrece. Como en el caso de “TU VIDA”, se ofrecen 3 maneras inclusivas de comunicarse con la agencia.
