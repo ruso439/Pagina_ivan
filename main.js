@@ -1,4 +1,5 @@
 const encabezados = document.querySelectorAll('.contenedor .encabezado');
+console.log('encabezados ', encabezados);
 const enlaces = document.querySelectorAll('#enlaces a');
 
 const observer = new IntersectionObserver((entradas, observador) => {
@@ -23,19 +24,21 @@ const observer = new IntersectionObserver((entradas, observador) => {
 });
 
 
-encabezados.forEach(encabezado => {
-	observer.observe(encabezado);	
-});
+// function speakArticle() {
+// 	var container = document.getElementsByTagName("article")[0];
+// 	var contentToSpeak = container.innerText;
+// 	speak(contentToSpeak, 'es-es');
+// }
 
-
-
-function speak(text, language) {
+function textToSpeech (element) {
+	const text = element.innerText;
 	var s = new SpeechSynthesisUtterance(text);
-	s.lang = language;	speechSynthesis.speak(s);
-}
-function speakArticle() {
-	var container = document.getElementsByTagName("article")[0];
-	var contentToSpeak = container.innerText;
-	speak(contentToSpeak, 'es-es');
+	s.lang = 'es';
+	speechSynthesis.speak(s);
 }
 
+encabezados.forEach(encabezado => {
+	observer.observe(encabezado);
+	encabezado.onclick = () => { textToSpeech(encabezado) };
+	console.log('onclick ', encabezado.onclick);
+});

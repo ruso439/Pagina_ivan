@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="robots" content="index,follow">
-	<title id="head-title">DE UNA</title>
-	<link rel="shortcut icon" href="/img/LOGO DEUNA entero.png" type="image/x-icon">
-	<link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://inmediative.com/app/layout/css/styles.css?v=?v1.004">
-	<script type="text/javascript" src="https://inmediative.com/app/layout/vendor/jquery-1.11.1.min.js?v=?v1.004"></script>
-	<script type="text/javascript" src="https://inmediative.com/app/layout/vendor/jquery.pagepiling.min.js?v=?v1.004"></script>
-	<script type="text/javascript" src="https://inmediative.com/app/layout/js/app.js?v=?v1.004"></script>
-
-<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,39 +10,35 @@
 	<link rel="stylesheet" href="estilos.css">
 	<meta property="fb:app_id" content="1745698645712277" /><link rel="icon" href="/img/LOGO DEUNA entero.png" type="image/x-icon" />
 	<link rel="shortcut icon" href="/img/LOGO DEUNA entero.png" type="image/x-icon" />
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<title>De Una</title>
 </head>
 <body>
-	
-	<button onclick="speackArticle();" class="btn-flotante"><img src="/img/SONIDO rojo.png" class="leer" ></button>
-	
-	<div class="contenedor">
+	<div class="seleccion">
+	       <button onclick="speackArticle();" class="btn-flotante"><img src="/img/SONIDO rojo.png" class="seccion" width="50px" height="50px"></button>
+	</div>
+	<div class="content>
 		<aside class="nav">
-			<div class="enlaces" id="enlaces" position= fixed>
-				<a href="#primera-seccion">Inicio</a>
-				<a href="#segunda-seccion">Quienes Somos</a>
-				<a href="#tercera-seccion">Que Hacemos</a>
-				<a href="#tercera-seccion1">Que Hacemos</a>
-				<a href="#tercera-seccion2">Que Hacemos</a>
-				<a href="#tercera-seccion3">Que Hacemos</a>
-				<a href="#tercera-seccion4">Que Hacemos</a>
-				<a href="#tercera-seccion5">Que Hacemos</a>
-				<a href="#tercera-seccion6">Que Hacemos</a>
-				<a href="#cuarta-seccion">Nuestros Laburos</a>
-				<a href="#cuarta-seccion1">Nuestros Laburos</a>
-				<a href="#quinta-seccion">Tu Vida</a>
-				<a href="#sexta-seccion">Paginas Amigables</a>
-				<a href="#septima-seccion">Contacto</a>
+			<div class="bg-danger p-3 mb-2 text-white" id="enlaces" position= fixed>
+				<div class="btn-group-vertical">
+					<button onclick="location.href='#primera-seccion'" class="btn btn-primary">Inicio</button>
+    				<button onclick="location.href='#segunda-seccion'" class="btn btn-primary">Quienes Somos</button>
+					<button onclick="location.href='#tercera-seccion'" class="btn btn-primary">Que Hacemos</button>
+    				<button onclick="location.href='#cuarta-seccion'" class="btn btn-primary">Nuestros Trabajos</button>
+					<button onclick="location.href='#quinta-seccion'" class="btn btn-primary">Tu Vida</button>
+					<button onclick="location.href='#sexta-seccion'" class="btn btn-primary">Paginas Amigables</button>
+					<button onclick="location.href='#septima-seccion'" class="btn btn-primary">Contacto</button>
+				</div>
 			</div>
 		</aside>
 	<article>
-		<div class="secciones">
-			<div class="seccion">
-				<h1 class="encabezado" id="primera-seccion">JUNTOS LE ENCONTRAMOS LA VUELTA</h1>
-				
-				
+		<div class="seleccion">
+
+			<div class="bg-info mw-40; mh-40; p-3 position-absolute top-50 start-50 translate-middle">
+				<h1 class="bg-info position-absolute top-50 start-50 translate-middle" id="primera-seccion">JUNTOS LE ENCONTRAMOS LA VUELTA</h1>						
 			</div>
-			<div class="seccion">
+			<div class="bg-primary">
 				<h1 class="encabezado" id="segunda-seccion">QUIENES SOMOS</h1>
 				<p>
 					Somos una agencia multimedial con espíritu juvenil, <br />
@@ -65,7 +50,7 @@
 					desafío, siempre le vamos a encontrar la vuelta. <br />
 				</p>
 			</div>
-			<div class="seccion">
+			<div class="bg-warning">
 				<h1 class="encabezado" id="tercera-seccion">QUE HACEMOS</h1>
 				<p>
 					Somos una agencia que ofrece soluciones <br />
@@ -75,7 +60,7 @@
 					la mejor manera que podamos	<br />
 				</p>
 			</div>
-			<div class="seccion">
+			<div class="bg-primary">
 				<h1 class="encabezado" id="tercera-seccion1">QUE HACEMOS</h1>
 				<p>
 					Somos una agencia que ofrece soluciones <br />
@@ -85,7 +70,7 @@
 					la mejor manera que podamos	<br />
 				</p>
 			</div>
-			<div class="seccion">
+			<div class="bg-info">
 				<h1 class="encabezado" id="tercera-seccion2">QUE HACEMOS</h1>
 				<p>
 					Somos una agencia que ofrece soluciones <br />
@@ -95,7 +80,7 @@
 					la mejor manera que podamos	<br />
 				</p>
 			</div>
-			<div class="seccion">
+			<div class="bg-warning">
 				<h1 class="encabezado" id="tercera-seccion3">QUE HACEMOS</h1>
 				<p>
 					Somos una agencia que ofrece soluciones <br />
@@ -105,7 +90,7 @@
 					la mejor manera que podamos	<br />
 				</p>
 			</div>
-			<div class="seccion">
+			<div class="bg-primary">
 				<h1 class="encabezado" id="tercera-seccion4">QUE HACEMOS</h1>
 				<p>
 					Somos una agencia que ofrece soluciones <br />
@@ -115,7 +100,7 @@
 					la mejor manera que podamos	<br />
 				</p>
 			</div>
-			<div class="seccion">
+			<div class="bg-success">
 				<h1 class="encabezado" id="tercera-seccion5">QUE HACEMOS</h1>
 				<p>
 					Somos una agencia que ofrece soluciones <br />
@@ -125,7 +110,7 @@
 					la mejor manera que podamos	<br />
 				</p>
 			</div>
-			<div class="seccion">
+			<div class="bg-danger">
 				<h1 class="encabezado" id="tercera-seccion6">QUE HACEMOS</h1>
 				<p>
 					Somos una agencia que ofrece soluciones <br />
@@ -135,19 +120,18 @@
 					la mejor manera que podamos	<br />
 				</p>
 			</div>
-			<div class="seccion">
-				<h1 class="encabezado" id="cuarta-seccion">NUESTROS LABUROS</h1>
-
+			<div class="bg-info">
+				<h1 class="encabezado" id="cuarta-seccion">NUESTROS TRABAJOS</h1>
 			</div>
-			<div class="seccion">
+			<div class="bg-dark text-white">
 				<h1 class="encabezado" id="quinta-seccion">TU VIDA</h1>
 
 			</div>
-			<div class="seccion">
+			<div class="bg-primary">
 				<h1 class="encabezado" id="sexta-seccion">PAGINAS AMIGABLES</h1>
 
 			</div>
-			<div class="seccion">
+			<div class="bg-warning">
 				<h1 class="encabezado" id="septima-seccion">CONTACTO</h1>
 
 			</div>
@@ -155,7 +139,7 @@
 	</article>
 	</div>
 	</div>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script src="main.js"></script>
 </body>
 </html>
