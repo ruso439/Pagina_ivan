@@ -1,146 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="estilos.css">
-	<meta property="fb:app_id" content="1745698645712277" /><link rel="icon" href="/img/LOGO DEUNA entero.png" type="image/x-icon" />
-	<link rel="shortcut icon" href="/img/LOGO DEUNA entero.png" type="image/x-icon" />
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<title>De Una</title>
-</head>
-<body>
-	<div class="seleccion">
-	       <button onclick="speackArticle();" class="btn-flotante"><img src="/img/SONIDO rojo.png" class="seccion" width="50px" height="50px"></button>
-	</div>
-	<div class="content>
-		<aside class="nav">
-			<div class="bg-danger p-3 mb-2 text-white" id="enlaces" position= fixed>
-				<div class="btn-group-vertical">
-					<button onclick="location.href='#primera-seccion'" class="btn btn-primary">Inicio</button>
-    				<button onclick="location.href='#segunda-seccion'" class="btn btn-primary">Quienes Somos</button>
-					<button onclick="location.href='#tercera-seccion'" class="btn btn-primary">Que Hacemos</button>
-    				<button onclick="location.href='#cuarta-seccion'" class="btn btn-primary">Nuestros Trabajos</button>
-					<button onclick="location.href='#quinta-seccion'" class="btn btn-primary">Tu Vida</button>
-					<button onclick="location.href='#sexta-seccion'" class="btn btn-primary">Paginas Amigables</button>
-					<button onclick="location.href='#septima-seccion'" class="btn btn-primary">Contacto</button>
-				</div>
-			</div>
-		</aside>
-	<article>
-		<div class="seleccion">
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="stylesheet" href="/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-			<div class="bg-info mw-40; mh-40; p-3 position-absolute top-50 start-50 translate-middle">
-				<h1 class="bg-info position-absolute top-50 start-50 translate-middle" id="primera-seccion">JUNTOS LE ENCONTRAMOS LA VUELTA</h1>						
-			</div>
-			<div class="bg-primary">
-				<h1 class="encabezado" id="segunda-seccion">QUIENES SOMOS</h1>
-				<p>
-					Somos una agencia multimedial con espíritu juvenil, <br />
-					chill y creativo. Proporcionamos soluciones <br />
-					originales, simples e inclusivas. Cada proyecto es un <br /> 
-					nuevo desafío que encaramos con humor, <br />
-					creatividad y respansabilidad. Nuestros clientes son <br />
-					nuestro mayor tesoro. No importa el <br />
-					desafío, siempre le vamos a encontrar la vuelta. <br />
-				</p>
-			</div>
-			<div class="bg-warning">
-				<h1 class="encabezado" id="tercera-seccion">QUE HACEMOS</h1>
-				<p>
-					Somos una agencia que ofrece soluciones <br />
-					creativas, originales e inclusivas para cualquier <br />
-					tipo de proyecto. Ideamos propuestas especificas <br />
-					a cada uno de nuestros clientes para ayudarlo de <br />
-					la mejor manera que podamos	<br />
-				</p>
-			</div>
-			<div class="bg-primary">
-				<h1 class="encabezado" id="tercera-seccion1">QUE HACEMOS</h1>
-				<p>
-					Somos una agencia que ofrece soluciones <br />
-					creativas, originales e inclusivas para cualquier <br />
-					tipo de proyecto. Ideamos propuestas especificas <br />
-					a cada uno de nuestros clientes para ayudarlo de <br />
-					la mejor manera que podamos	<br />
-				</p>
-			</div>
-			<div class="bg-info">
-				<h1 class="encabezado" id="tercera-seccion2">QUE HACEMOS</h1>
-				<p>
-					Somos una agencia que ofrece soluciones <br />
-					creativas, originales e inclusivas para cualquier <br />
-					tipo de proyecto. Ideamos propuestas especificas <br />
-					a cada uno de nuestros clientes para ayudarlo de <br />
-					la mejor manera que podamos	<br />
-				</p>
-			</div>
-			<div class="bg-warning">
-				<h1 class="encabezado" id="tercera-seccion3">QUE HACEMOS</h1>
-				<p>
-					Somos una agencia que ofrece soluciones <br />
-					creativas, originales e inclusivas para cualquier <br />
-					tipo de proyecto. Ideamos propuestas especificas <br />
-					a cada uno de nuestros clientes para ayudarlo de <br />
-					la mejor manera que podamos	<br />
-				</p>
-			</div>
-			<div class="bg-primary">
-				<h1 class="encabezado" id="tercera-seccion4">QUE HACEMOS</h1>
-				<p>
-					Somos una agencia que ofrece soluciones <br />
-					creativas, originales e inclusivas para cualquier <br />
-					tipo de proyecto. Ideamos propuestas especificas <br />
-					a cada uno de nuestros clientes para ayudarlo de <br />
-					la mejor manera que podamos	<br />
-				</p>
-			</div>
-			<div class="bg-success">
-				<h1 class="encabezado" id="tercera-seccion5">QUE HACEMOS</h1>
-				<p>
-					Somos una agencia que ofrece soluciones <br />
-					creativas, originales e inclusivas para cualquier <br />
-					tipo de proyecto. Ideamos propuestas especificas <br />
-					a cada uno de nuestros clientes para ayudarlo de <br />
-					la mejor manera que podamos	<br />
-				</p>
-			</div>
-			<div class="bg-danger">
-				<h1 class="encabezado" id="tercera-seccion6">QUE HACEMOS</h1>
-				<p>
-					Somos una agencia que ofrece soluciones <br />
-					creativas, originales e inclusivas para cualquier <br />
-					tipo de proyecto. Ideamos propuestas especificas <br />
-					a cada uno de nuestros clientes para ayudarlo de <br />
-					la mejor manera que podamos	<br />
-				</p>
-			</div>
-			<div class="bg-info">
-				<h1 class="encabezado" id="cuarta-seccion">NUESTROS TRABAJOS</h1>
-			</div>
-			<div class="bg-dark text-white">
-				<h1 class="encabezado" id="quinta-seccion">TU VIDA</h1>
+    <title>DE UNA</title>
+	<link rel="shortcut icon" href="/img/LOGO DEUNA entero.png" type="image/x-icon">
 
-			</div>
-			<div class="bg-primary">
-				<h1 class="encabezado" id="sexta-seccion">PAGINAS AMIGABLES</h1>
+  </head>
+  <body>
+    <div class="wrapper">
+    <!--Top menu -->
+        <div class="sidebar">
+          <!-- linea blanca -->
+          <!--menu item-->
+          <ul id="navMenus" class="linea">
+            <li>
+              <a href="#seccion-1" class="active">
+                <span class="item">Inicio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#seccion-2">
+                <span class="item">Quiénes Somos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#seccion-3">
+                <span class="item">Qué Hacemos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#seccion-4">
+                <span class="item">Nuestros Laburos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#seccion-5">
+                <span class="item">Tu Vida</span>
+              </a>
+            </li>
+            <li>
+              <a href="#seccion-6">
+                <span class="item">Páginas Amigables</span>
+              </a>
+            </li>
+            <li>
+              <a href="#seccion-7">
+                <span class="item">Conctacto</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="main_content">
+         <!-- <div class="header"></div> -->
+			    <div class="logo">
+			    	<img class="logo" src="/img/LOGO DEUNA entero.png" alt="de una">
+			    </div>
+          <div class="secciones">
+            <section class="seccion" id="seccion-1">
+              <h1 class="center">
+				      <ul class="JUNTOS">JUNTOS</ul>
+				      <ul class="">le encontramos</ul>
+				      <ul>la VUELTA</ul>
+			        </h1>
+            </section>
+            <section class="seccion" id="seccion-2">
+              <h1 class="center">Sección 2</h1>
+            </section>
+            <section class="seccion" id="seccion-3">
+              <h1 class="center">Sección 3</h1>
+            </section>
+            <section class="seccion" id="seccion-2">
+              <h1 class="center">Sección 4</h1>
+            </section>   
+            <section class="seccion" id="seccion-2">
+              <h1 class="center">Sección 5</h1>
+            </section>
+            <section class="seccion" id="seccion-2">
+              <h1 class="center">Sección 6</h1>
+            </section>
+            <section class="seccion" id="seccion-2">
+              <h1 class="center">Sección 7</h1>
+            </section>
+            
+          </div> 
+          <div class="seleccion">
+            <button class="btn-flotante" id="btnSonido"><img src="/img/SONIDO rojo.png" class="seccionBtn">
+            </button>
+          </div>
+        </div>
 
-			</div>
-			<div class="bg-warning">
-				<h1 class="encabezado" id="septima-seccion">CONTACTO</h1>
+    </div>
 
-			</div>
-		</div>
-	</article>
-	</div>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<script src="main.js"></script>
-</body>
+
+
+
+  </body>
+
+<script type="text/javascript"src="//code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript"src="main.js"></script>
+<script type="text/javascript">
+// Menu
+$("#navMenus").on('click','a',function(){
+    $("#navMenus a.active").removeClass("active");
+    $(this).addClass("active");
+});</script>
 </html>
--->

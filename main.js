@@ -1,44 +1,53 @@
-const encabezados = document.querySelectorAll('.contenedor .encabezado');
-console.log('encabezados ', encabezados);
-const enlaces = document.querySelectorAll('#enlaces a');
+const encabezados = document.querySelectorAll('.seleccion .sample');
 
-const observer = new IntersectionObserver((entradas, observador) => {
-	entradas.forEach(entrada => {
-		if(entrada.isIntersecting){
-			const id = '#' + entrada.target.id;
-			history.pushState({}, entrada.target.innetText, id);
+const observer = (entradas, observador) => {
+    entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+            console.log("Sección actual: " + entrada.target.innerText);
+            //document.getElementById('btnSonido').style.visibility = 'visible'; // Mostrar botón sonido
+            cargarTexto(entrada.target.innerText);
 
-			enlaces.forEach(enlace => {
-				enlace.classList.remove('activo');
+        } else {
+            speechSynthesis.cancel(); //  Detener sonido cuando la sección no esta en el view
+            //document.getElementById('btnSonido').style.visibility = 'hidden'; // Ocultar botón sonido
+        }
+    });
+}
 
-				const href = enlace.attributes.href.nodeValue;
-				if(href === id){
-					enlace.classList.add('activo');
-				}
-			});
-		}
-	});
-}, {
-	threshold: 1,
-	rootMargin: '0px 0px -50% 0px'
+const observador = new IntersectionObserver(observer, {
+    root: null,
+    threshold: 1,
+    //rootMargin: '0px 0px -50% 0px',
+    rootMargin: '0px 0px 0px 0px',
 });
 
 
-// function speakArticle() {
-// 	var container = document.getElementsByTagName("article")[0];
-// 	var contentToSpeak = container.innerText;
-// 	speak(contentToSpeak, 'es-es');
-// }
+encabezados.forEach(encabezado => {
+    // Observar todos los encabezados
+    observador.observe(encabezado);
+});
 
-function textToSpeech (element) {
-	const text = element.innerText;
-	var s = new SpeechSynthesisUtterance(text);
-	s.lang = 'es';
-	speechSynthesis.speak(s);
+
+let message = new SpeechSynthesisUtterance();
+function cargarTexto(texto) {
+    message.text = texto;
 }
 
-encabezados.forEach(encabezado => {
-	observer.observe(encabezado);
-	encabezado.onclick = () => { textToSpeech(encabezado) };
-	console.log('onclick ', encabezado.onclick);
+function reproducirTexto(aMessage) {
+    speechSynthesis.speak(aMessage);
+}
+
+// Reproducir cuando se haga click en boton que contenga btn-flotante
+document.addEventListener('click', (e) => {
+    const target = e.target;
+    const btnF = target.parentElement;
+    if (!btnF.classList.contains('btn-flotante')) {
+        return;
+    }
+    // btnF.classList.add('active');
+    setTimeout(() => {
+        reproducirTexto(message);
+        // btnF.classList.remove('active');
+
+    }, 800);
 });
