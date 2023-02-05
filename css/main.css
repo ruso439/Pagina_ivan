@@ -108,10 +108,6 @@ background: transparent;
 
 .btn-flotante {
 	width: 10%;
-  height: 16%;
-  /*font-size: 180px;  Cambiar el tamaño de la tipografia */
-	text-transform: uppercase; /* Texto en mayusculas */
-	font-weight: bold; /* Fuente en negrita o bold */
 	color: #ffffff; /* Color del texto */
 	border-radius: 75%; /* Borde del boton */
 	letter-spacing: 2px; /* Espacio entre letras */
