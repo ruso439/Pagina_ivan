@@ -1,13 +1,15 @@
-const encabezados = document.querySelectorAll('.seleccion .sample');
+const encabezados = document.querySelectorAll('.secciones .seccion');
 
 const observer = (entradas, observador) => {
     entradas.forEach((entrada) => {
+        let sectionId = entrada.target.id;
         if (entrada.isIntersecting) {
             console.log("Sección actual: " + entrada.target.innerText);
             //document.getElementById('btnSonido').style.visibility = 'visible'; // Mostrar botón sonido
             cargarTexto(entrada.target.innerText);
-
+            document.querySelector('li a[href*="' + sectionId + '"]').classList.add('active');
         } else {
+            document.querySelector('li a[href*="' + sectionId + '"]').classList.remove('active');
             speechSynthesis.cancel(); //  Detener sonido cuando la sección no esta en el view
             //document.getElementById('btnSonido').style.visibility = 'hidden'; // Ocultar botón sonido
         }
@@ -16,8 +18,7 @@ const observer = (entradas, observador) => {
 
 const observador = new IntersectionObserver(observer, {
     root: null,
-    threshold: 1,
-    //rootMargin: '0px 0px -50% 0px',
+    threshold: 0.5,
     rootMargin: '0px 0px 0px 0px',
 });
 
